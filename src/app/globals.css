@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface-tertiary text-text-primary antialiased;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply px-4 py-12;
+  }
+
+  @media (min-width: 640px) {
+    .section-container {
+      @apply px-6 py-16;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-container {
+      @apply px-8 py-20 max-w-6xl mx-auto;
+    }
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 text-sm font-semibold rounded-2xl transition-all duration-300
+           bg-accent text-white hover:bg-accent-dark shadow-md shadow-accent/20;
+  }
+
+  @media (min-width: 640px) {
+    .btn-primary {
+      @apply px-8 py-3.5 text-base;
+    }
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 text-sm font-semibold rounded-2xl transition-all duration-300
+           border border-border text-text-primary bg-white hover:border-primary hover:text-primary;
+  }
+
+  @media (min-width: 640px) {
+    .btn-secondary {
+      @apply px-8 py-3.5 text-base;
+    }
+  }
+
+  .card {
+    @apply bg-white rounded-3xl border border-border-light shadow-sm
+           hover:shadow-md transition-all duration-300;
+  }
+
+  .tech-badge {
+    @apply px-2 py-1 text-xs font-medium rounded-md;
+  }
+
+  @media (min-width: 640px) {
+    .tech-badge {
+      @apply px-3 py-1 text-sm;
+    }
+  }
+}
+
+/* ============================================ */
+/* DARK MODE                                     */
+/* ============================================ */
+html.dark body {
+  @apply bg-dark text-white;
+}
+
+html.dark .bg-surface-tertiary {
+  @apply bg-dark;
+}
+
+html.dark .bg-surface-secondary {
+  @apply bg-dark-lighter;
+}
+
+html.dark .card {
+  @apply bg-dark-lighter border-dark-lighter;
+}
+
+html.dark .btn-secondary {
+  @apply border-gray-600 text-white bg-dark-lighter hover:border-primary;
+}
+
+html.dark .text-text-primary {
+  @apply text-white;
+}
+
+html.dark .text-text-secondary {
+  @apply text-gray-300;
+}
+
+html.dark .text-text-tertiary {
+  @apply text-gray-400;
+}
+
+html.dark nav {
+  background-color: rgba(15, 23, 42, 0.9) !important;
+}
+
+html.dark input,
+html.dark textarea,
+html.dark select {
+  @apply bg-dark border-gray-600 text-white;
+}

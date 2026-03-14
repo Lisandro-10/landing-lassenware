@@ -1,0 +1,28 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "Lisandro Andia | Ingeniero en Sistemas",
+  description: "Portfolio profesional de Lisandro Andia",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="es" suppressHydrationWarning>
+      <body className={`${inter.className} flex flex-col min-h-screen`}>
+        {children}
+        <Analytics />
+      </body>
+    </html>
+  );
+}

@@ -1,0 +1,198 @@
+{
+  "Metadata": {
+    "title": "Lisandro Andia | Systems Engineer",
+    "description": "Professional portfolio of Lisandro Andia - Systems Engineer, specialized in Next.js and Spring Boot web application development"
+  },
+  "Navbar": {
+    "projects": "Projects",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "name": "Lisandro Andia",
+    "role": "Systems Engineer | Full Stack Developer",
+    "description": "Specialized in creating scalable and modern web experiences. Passionate about the full software development lifecycle.",
+    "viewServices": "View Services",
+    "contactMe": "Contact Me"
+  },
+  "TechStack": {
+    "title": "Tech Stack",
+    "items": {
+      "react": "React",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "tailwind": "Tailwind",
+      "aws": "AWS",
+      "postgresql": "PostgreSQL",
+      "mysql": "MySQL",
+      "java": "Java",
+      "springboot": "Spring Boot"
+    }
+  },
+  "Projects": {
+    "title": "Featured Projects",
+    "subtitle": "Selection of recent works",
+    "viewAll": "View All",
+    "viewProject": "View Project",
+    "liveDemo": "Live Demo",
+    "sourceCode": "Source",
+    "privateRepo": "Private Repo",
+    "items": {
+      "ecommerce": {
+        "title": "E-commerce Solution",
+        "description": "A complete e-commerce web application featuring MercadoPago integration and Tiendanube platform."
+      },
+      "lostilos": {
+        "title": "Club Management System",
+        "description": "Platform to manage partners with authentication, categorization, and activity tracking."
+      },
+      "hexagon": {
+        "title": "Hexagon Solutions Web",
+        "description": "Corporate website development focused on modern design principles and high performance."
+      },
+      "estudioandia": {
+        "title": "Estudio Andia Web",
+        "description": "Elegant static website portfolio for an architecture firm, built for speed and visual impact."
+      },
+      "ando-presskit": {
+        "title": "Ando Press Kit",
+        "description": "Interactive electronic press kit for a Progressive House DJ group from Mendoza, Argentina."
+      },
+      "master-event": {
+        "title": "Master Event Web",
+        "description": "Elegant static website for a sound equipment rental from Mendoza, Argentina, built for speed and visual impact."
+      }
+    }
+  },
+  "About": {
+    "title": "Experience",
+    "experiences": {
+      "ntt": {
+        "role": "Liferay Developer",
+        "company": "NTT DATA",
+        "period": "Sep 2025 - Present",
+        "description": "Development of portals and applications using Liferay DXP. Customizing themes and integrating external services."
+      },
+      "certant": {
+        "role": "Full Stack Developer Junior",
+        "company": "Certant SA",
+        "period": "Jun 2024 - Sep 2025",
+        "description": "Client-server web development, CMS maintenance, and REST API development with Java and Spring Boot."
+      }
+    }
+  },
+  "Services": {
+    "title": "Web Development Plans",
+    "subtitle": "Solutions tailored to your needs. From a landing page to a complete online store.",
+    "getStarted": "Get Started",
+    "contactForQuote": "Contact for Quote",
+    "plans": {
+      "landing": {
+        "title": "Essential Landing",
+        "label": "STARTER",
+        "description": "Quick and effective web presence for personal brands.",
+        "features": [
+          "Build with platforms like WordPress",
+          "Landing page with 1-3 sections",
+          "Design based on modern templates",
+          "100% responsive (mobile and desktop)",
+          "Functional contact form",
+          "1 revision round"
+        ]
+      },
+      "professional": {
+        "title": "Professional Web",
+        "label": "MOST POPULAR",
+        "description": "Complete and scalable solution for growing businesses.",
+        "features": [
+          "Complete SPA developed with Next.js",
+          "Unique design adapted to your brand",
+          "SEO optimized (meta tags, sitemap)",
+          "Smooth animations and transitions",
+          "Advanced forms (contact, newsletter)",
+          "2 revision rounds"
+        ]
+      },
+      "ecommerce": {
+        "title": "E-commerce Solution",
+        "label": "BUSINESS",
+        "description": "Sell online from day one with a fully integrated shop.",
+        "features": [
+          "Everything in the Professional Plan",
+          "Integration with Tiendanube / Stripe",
+          "Custom product catalog",
+          "Functional shopping cart & Checkout",
+          "Admin panel for management",
+          "3 months maintenance included"
+        ]
+      },
+      "customSolution": {
+        "title": "Custom Solution",
+        "description": "Need something specific? Let's discuss your needs and create a solution that meets your exact requirements."
+      }
+    },
+    "faq": {
+      "revision": {
+        "question": "What is a revision round?",
+        "answer": "Each round allows modifications of texts, images, colors, and design adjustments. It does not include complete structure changes or additional functionalities not initially agreed upon."
+      },
+      "maintenance": {
+        "question": "What does basic maintenance include?",
+        "answer": "Includes content updates (2-3 changes per month), text and image changes, contact information updates, bug fixes, and dependency security updates."
+      },
+      "additional": {
+        "question": "Can I add additional functionalities?",
+        "answer": "Yes, the development of new functionalities is quoted separately according to the complexity of the requirement."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Contact",
+    "subtitle": "Have a project in mind? Let's talk!",
+    "quickConnect": "Quick Connect",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "linkedin": "LinkedIn",
+    "location": "Mendoza, Argentina",
+    "sendMessage": "Send me a message",
+    "form": {
+      "title": "Send me a message",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "service": "Service of interest",
+      "selectService": "Select a service",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Something went wrong."
+    }
+  },
+  "Footer": {
+    "rights": "© 2026 Lisandro Andia. All rights reserved.",
+    "builtWith": "Built with Next.js & Tailwind CSS"
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist or has been moved.",
+    "backHome": "Back to Home",
+    "previousPage": "Previous Page",
+    "explore": "Or you can explore:",
+    "myProjects": "My Projects",
+    "aboutMe": "About Me",
+    "contact": "Contact"
+  },
+  "LanguageSwitcher": {
+    "es": "Español",
+    "en": "English"
+  },
+  "Error": {
+    "title": "Something went wrong!",
+    "description": "An unexpected error occurred. Please try again.",
+    "tryAgain": "Try again"
+  }
+}

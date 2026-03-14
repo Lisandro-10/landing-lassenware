@@ -1,0 +1,198 @@
+{
+  "Metadata": {
+    "title": "Lisandro Andia | Ingeniero en Sistemas",
+    "description": "Portfolio profesional de Lisandro Andia - Ingeniero en Sistemas, especializado en desarrollo de aplicaciones web Next.js y Spring Boot"
+  },
+  "Navbar": {
+    "projects": "Proyectos",
+    "services": "Servicios",
+    "about": "Experiencia",
+    "contact": "Contacto"
+  },
+  "Hero": {
+    "name": "Lisandro Andia",
+    "role": "Ingeniero en Sistemas | Desarrollador Full Stack",
+    "description": "Especializado en crear experiencias web modernas y escalables. Con experiencia en el ciclo de vida completo del desarrollo de software.",
+    "viewServices": "Ver Servicios",
+    "contactMe": "Contactar"
+  },
+  "TechStack": {
+    "title": "Tech Stack",
+    "items": {
+      "react": "React",
+      "nextjs": "Next.js",
+      "typescript": "TypeScript",
+      "tailwind": "Tailwind",
+      "postgresql": "PostgreSQL",
+      "aws": "AWS",
+      "mysql": "MySQL",
+      "java": "Java",
+      "springboot": "Spring Boot"
+    }
+  },
+  "Projects": {
+    "title": "Proyectos Destacados",
+    "subtitle": "Selección de trabajos recientes",
+    "viewAll": "Ver Todos",
+    "viewProject": "Ver Proyecto",
+    "liveDemo": "Demo en Vivo",
+    "sourceCode": "Código",
+    "privateRepo": "Repo Privado",
+    "items": {
+      "ecommerce": {
+        "title": "Solución E-commerce",
+        "description": "Aplicación web completa para e-commerce con integración de MercadoPago y plataforma Tiendanube."
+      },
+      "lostilos": {
+        "title": "Sistema de Gestión de Socios",
+        "description": "Plataforma para gestionar socios con autenticación, categorización y seguimiento de actividades."
+      },
+      "hexagon": {
+        "title": "Hexagon Solutions Web",
+        "description": "Desarrollo web corporativo enfocado en diseño moderno y alto rendimiento."
+      },
+      "estudioandia": {
+        "title": "Estudio Andia Web",
+        "description": "Sitio web estático elegante para un estudio de arquitectura, construido para velocidad e impacto visual."
+      },
+      "ando-presskit": {
+        "title": "Ando Press Kit",
+        "description": "Press kit electrónico interactivo para un grupo de DJ de Progressive House de Mendoza, Argentina."
+      },
+      "master-event": {
+        "title": "Master Event Web",
+        "description": "Sitio web de empresa de alquiler de equipos de sonido ubicada en Mendoza, Argentina."
+      }
+    }
+  },
+  "About": {
+    "title": "Experiencia",
+    "experiences": {
+      "ntt": {
+        "role": "Liferay Developer",
+        "company": "NTT DATA",
+        "period": "Sep 2025 - Presente",
+        "description": "Desarrollo de portales y aplicaciones con Liferay DXP. Personalización de themes e integración con servicios externos."
+      },
+      "certant": {
+        "role": "Desarrollador Full Stack Junior",
+        "company": "Certant SA",
+        "period": "Jun 2024 - Sep 2025",
+        "description": "Desarrollo web cliente-servidor, mantenimiento de CMS y desarrollo de API REST con Java y Spring Boot."
+      }
+    }
+  },
+  "Services": {
+    "title": "Planes de Desarrollo Web",
+    "subtitle": "Soluciones adaptadas a tus necesidades. Desde una landing page hasta una tienda online completa.",
+    "getStarted": "Comenzar",
+    "contactForQuote": "Pedir Cotización",
+    "plans": {
+      "landing": {
+        "title": "Landing Esencial",
+        "label": "STARTER",
+        "description": "Presencia web rápida y efectiva para marcas personales.",
+        "features": [
+          "Construido con plataformas como WordPress",
+          "Landing page de 1-3 secciones",
+          "Diseño basado en templates modernos",
+          "100% responsive (móvil y desktop)",
+          "Formulario de contacto funcional",
+          "1 ronda de revisión"
+        ]
+      },
+      "professional": {
+        "title": "Web Profesional",
+        "label": "MÁS POPULAR",
+        "description": "Solución completa y escalable para negocios en crecimiento.",
+        "features": [
+          "SPA completa desarrollada con Next.js",
+          "Diseño único adaptado a tu marca",
+          "SEO optimizado (meta tags, sitemap)",
+          "Animaciones y transiciones suaves",
+          "Formularios avanzados (contacto, newsletter)",
+          "2 rondas de revisión"
+        ]
+      },
+      "ecommerce": {
+        "title": "Solución E-commerce",
+        "label": "BUSINESS",
+        "description": "Vendé online desde el día uno con una tienda integrada.",
+        "features": [
+          "Todo lo del Plan Profesional",
+          "Integración con Tiendanube / Stripe",
+          "Catálogo de productos personalizado",
+          "Carrito de compras y Checkout funcional",
+          "Panel de administración",
+          "3 meses de mantenimiento incluido"
+        ]
+      },
+      "customSolution": {
+        "title": "Solución Personalizada",
+        "description": "¿Necesitás algo específico? Discutamos tus necesidades y creemos una solución que cumpla con tus requerimientos."
+      }
+    },
+    "faq": {
+      "revision": {
+        "question": "¿Qué es una ronda de revisión?",
+        "answer": "Cada ronda permite modificaciones de textos, imágenes, colores y ajustes de diseño. No incluye cambios de estructura completa ni funcionalidades adicionales no acordadas."
+      },
+      "maintenance": {
+        "question": "¿Qué incluye el mantenimiento básico?",
+        "answer": "Incluye actualización de contenidos (2-3 cambios por mes), cambios de textos e imágenes, corrección de bugs y actualizaciones de seguridad."
+      },
+      "additional": {
+        "question": "¿Puedo agregar funcionalidades adicionales?",
+        "answer": "Sí, el desarrollo de nuevas funcionalidades se cotiza por separado según la complejidad del requerimiento."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Contacto",
+    "subtitle": "¿Tenés un proyecto en mente? ¡Hablemos!",
+    "quickConnect": "Conexión Rápida",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "linkedin": "LinkedIn",
+    "location": "Mendoza, Argentina",
+    "sendMessage": "Enviame un mensaje",
+    "form": {
+      "title": "Enviame un mensaje",
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "service": "Servicio de interés",
+      "selectService": "Seleccioná un servicio",
+      "message": "Mensaje",
+      "messagePlaceholder": "Contame sobre tu proyecto...",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado correctamente!",
+      "error": "Algo salió mal."
+    }
+  },
+  "Footer": {
+    "rights": "© 2026 Lisandro Andia. Todos los derechos reservados.",
+    "builtWith": "Hecho con Next.js & Tailwind CSS"
+  },
+  "NotFound": {
+    "title": "Página No Encontrada",
+    "description": "Lo sentimos, la página que estás buscando no existe o ha sido movida.",
+    "backHome": "Volver al Inicio",
+    "previousPage": "Página Anterior",
+    "explore": "O podés explorar:",
+    "myProjects": "Mis Proyectos",
+    "aboutMe": "Sobre Mí",
+    "contact": "Contacto"
+  },
+  "LanguageSwitcher": {
+    "es": "Español",
+    "en": "English"
+  },
+  "Error": {
+    "title": "¡Algo salió mal!",
+    "description": "Ocurrió un error inesperado. Por favor, intentá nuevamente.",
+    "tryAgain": "Intentar de nuevo"
+  }
+}
