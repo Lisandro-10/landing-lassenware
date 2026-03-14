@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
-import { useTranslations } from 'next-intl';
+import { useEffect } from "react";
+import { useTranslations } from "next-intl";
 
 export default function Error({
   error,
@@ -10,26 +10,29 @@ export default function Error({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
-  const t = useTranslations('Error');
+  const t = useTranslations("Error");
 
   useEffect(() => {
-    console.error('Locale error:', error);
+    console.error("Locale error:", error);
   }, [error]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-dark px-4">
+    <div className="min-h-screen flex items-center justify-center bg-surface-tertiary dark:bg-dark px-4">
       <div className="max-w-md w-full text-center">
-        <h2 className="text-3xl font-bold text-white mb-4">
-          {t('title')}
+        <p className="font-display font-bold text-lg text-primary mb-6 tracking-tight">
+          Lassenware
+        </p>
+        <h2 className="font-display font-bold text-2xl text-text-primary dark:text-white mb-3">
+          {t("title")}
         </h2>
-        <p className="text-gray-400 mb-8">
-          {t('description')}
+        <p className="text-sm text-text-secondary dark:text-gray-400 mb-8 leading-relaxed">
+          {t("description")}
         </p>
         <button
           onClick={reset}
-          className="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/80 transition-colors"
+          className="btn-primary"
         >
-          {t('tryAgain')}
+          {t("tryAgain")}
         </button>
       </div>
     </div>

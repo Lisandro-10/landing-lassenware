@@ -17,7 +17,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const messages = (await import(`../../messages/${locale}.json`)).default;
-  const baseUrl = 'https://lisandroandia.com';
+  const baseUrl = "https://lassenware.com";
 
   return {
     title: messages.Metadata.title,
@@ -26,31 +26,31 @@ export async function generateMetadata({
     alternates: {
       canonical: `${baseUrl}/${locale}`,
       languages: {
-        'es': `${baseUrl}/es`,
-        'en': `${baseUrl}/en`,
+        es: `${baseUrl}/es`,
+        en: `${baseUrl}/en`,
       },
     },
     openGraph: {
       title: messages.Metadata.title,
       description: messages.Metadata.description,
       url: `${baseUrl}/${locale}`,
-      siteName: 'Lisandro Andia Portfolio',
+      siteName: "Lassenware",
       locale: locale,
-      type: 'website',
+      type: "website",
       images: [
         {
-          url: '/profile-about.jpg',
+          url: "/og-image.jpg",
           width: 1200,
           height: 630,
-          alt: 'Lisandro Andia - Systems Engineer',
+          alt: "Lassenware — Hacemos tu vida más fácil",
         },
       ],
     },
     twitter: {
-      card: 'summary_large_image',
+      card: "summary_large_image",
       title: messages.Metadata.title,
       description: messages.Metadata.description,
-      images: ['/profile-about.jpg'],
+      images: ["/og-image.jpg"],
     },
   };
 }
@@ -75,10 +75,8 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <Navbar />
-      <div className="flex-1">
-        {children}
-      </div>
-        <Footer />
+      <div className="flex-1">{children}</div>
+      <Footer />
     </NextIntlClientProvider>
   );
 }

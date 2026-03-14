@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 export default function GlobalError({
   error,
@@ -10,25 +10,66 @@ export default function GlobalError({
   reset: () => void;
 }) {
   useEffect(() => {
-    console.error('Global error:', error);
+    console.error("Global error:", error);
   }, [error]);
 
   return (
     <html lang="es">
-      <body className="bg-dark text-white">
-        <div className="min-h-screen flex items-center justify-center px-4">
-          <div className="max-w-md w-full text-center">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              Something went wrong!
+      <body style={{ backgroundColor: "#111111", color: "#ffffff", margin: 0 }}>
+        <div
+          style={{
+            minHeight: "100vh",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            padding: "1rem",
+          }}
+        >
+          <div style={{ maxWidth: "28rem", width: "100%", textAlign: "center" }}>
+            <p
+              style={{
+                fontWeight: "700",
+                fontSize: "1.125rem",
+                color: "#E85D24",
+                marginBottom: "1.5rem",
+                letterSpacing: "-0.02em",
+              }}
+            >
+              Lassenware
+            </p>
+            <h2
+              style={{
+                fontWeight: "700",
+                fontSize: "1.5rem",
+                marginBottom: "0.75rem",
+              }}
+            >
+              ¡Algo salió mal!
             </h2>
-            <p className="text-gray-400 mb-8">
-              An unexpected error occurred. Please try again.
+            <p
+              style={{
+                fontSize: "0.875rem",
+                color: "#9ca3af",
+                marginBottom: "2rem",
+                lineHeight: "1.6",
+              }}
+            >
+              Ocurrió un error crítico. Por favor, recargá la página.
             </p>
             <button
               onClick={reset}
-              className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              style={{
+                backgroundColor: "#E85D24",
+                color: "#ffffff",
+                border: "none",
+                borderRadius: "1rem",
+                padding: "0.75rem 1.5rem",
+                fontWeight: "600",
+                fontSize: "0.875rem",
+                cursor: "pointer",
+              }}
             >
-              Try again
+              Intentar de nuevo
             </button>
           </div>
         </div>

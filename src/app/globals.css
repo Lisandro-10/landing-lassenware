@@ -9,6 +9,11 @@
 
   body {
     @apply bg-surface-tertiary text-text-primary antialiased;
+    font-family: var(--font-dm-sans), sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-space-grotesk), sans-serif;
   }
 }
 
@@ -29,9 +34,12 @@
     }
   }
 
+  /* Primary CTA — Ember orange */
   .btn-primary {
     @apply px-6 py-3 text-sm font-semibold rounded-2xl transition-all duration-300
-           bg-accent text-white hover:bg-accent-dark shadow-md shadow-accent/20;
+           bg-primary text-white hover:bg-primary-dark shadow-md shadow-primary/20;
+    font-family: var(--font-dm-sans), sans-serif;
+    font-weight: 500;
   }
 
   @media (min-width: 640px) {
@@ -40,9 +48,12 @@
     }
   }
 
+  /* Secondary CTA — outlined */
   .btn-secondary {
     @apply px-6 py-3 text-sm font-semibold rounded-2xl transition-all duration-300
            border border-border text-text-primary bg-white hover:border-primary hover:text-primary;
+    font-family: var(--font-dm-sans), sans-serif;
+    font-weight: 500;
   }
 
   @media (min-width: 640px) {
@@ -51,11 +62,13 @@
     }
   }
 
+  /* Card */
   .card {
     @apply bg-white rounded-3xl border border-border-light shadow-sm
            hover:shadow-md transition-all duration-300;
   }
 
+  /* Tech badge / tag pill */
   .tech-badge {
     @apply px-2 py-1 text-xs font-medium rounded-md;
   }
@@ -65,11 +78,21 @@
       @apply px-3 py-1 text-sm;
     }
   }
+
+  /* Ember accent underline for section headings */
+  .section-heading-accent {
+    @apply relative inline-block;
+  }
+
+  .section-heading-accent::after {
+    content: "";
+    @apply absolute left-0 -bottom-1 h-[3px] w-10 bg-primary rounded-full;
+  }
 }
 
-/* ============================================ */
-/* DARK MODE                                     */
-/* ============================================ */
+/* ============================================
+   DARK MODE
+   ============================================ */
 html.dark body {
   @apply bg-dark text-white;
 }
@@ -87,7 +110,7 @@ html.dark .card {
 }
 
 html.dark .btn-secondary {
-  @apply border-gray-600 text-white bg-dark-lighter hover:border-primary;
+  @apply border-gray-700 text-white bg-dark-lighter hover:border-primary;
 }
 
 html.dark .text-text-primary {
@@ -103,11 +126,11 @@ html.dark .text-text-tertiary {
 }
 
 html.dark nav {
-  background-color: rgba(15, 23, 42, 0.9) !important;
+  background-color: rgba(17, 17, 17, 0.92) !important;
 }
 
 html.dark input,
 html.dark textarea,
 html.dark select {
-  @apply bg-dark border-gray-600 text-white;
+  @apply bg-dark-lighter border-gray-700 text-white;
 }

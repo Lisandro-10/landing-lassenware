@@ -2,28 +2,35 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { BiHome } from "react-icons/bi";
-import { BiArrowBack } from "react-icons/bi";
+import { BiHome, BiArrowBack } from "react-icons/bi";
+import SlashLogo from "@/app/components/ui/SlashLogo";
 
 export default function NotFound() {
   const t = useTranslations("NotFound");
 
   return (
-    <div className="min-h-screen bg-dark text-white flex items-center justify-center px-4">
-      <div className="max-w-2xl w-full text-center">
-        <h1 className="text-8xl sm:text-9xl md:text-[12rem] font-bold text-primary/20 mb-4 sm:mb-6">
+    <div className="min-h-screen bg-surface-tertiary dark:bg-dark text-text-primary dark:text-white flex items-center justify-center px-4">
+      <div className="max-w-xl w-full text-center">
+
+        {/* Brand mark */}
+        <div className="flex justify-center mb-8">
+          <SlashLogo size={48} />
+        </div>
+
+        {/* 404 */}
+        <h1 className="font-display font-bold text-8xl sm:text-9xl text-primary/20 mb-4 leading-none">
           404
         </h1>
 
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
+        <h2 className="font-display font-bold text-2xl sm:text-3xl mb-3">
           {t("title")}
         </h2>
-
-        <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-8 sm:mb-10 max-w-md mx-auto">
+        <p className="text-sm sm:text-base text-text-secondary dark:text-gray-400 mb-10 max-w-sm mx-auto leading-relaxed">
           {t("description")}
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+        {/* Actions */}
+        <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-10">
           <Link
             href="/"
             className="btn-primary w-full sm:w-auto flex items-center justify-center gap-2"
@@ -31,7 +38,6 @@ export default function NotFound() {
             <BiHome size={18} />
             <span>{t("backHome")}</span>
           </Link>
-
           <button
             onClick={() => window.history.back()}
             className="btn-secondary w-full sm:w-auto flex items-center justify-center gap-2"
@@ -41,28 +47,20 @@ export default function NotFound() {
           </button>
         </div>
 
-        <div className="mt-12 sm:mt-16 pt-8 border-t border-dark-lighter">
-          <p className="text-xs sm:text-sm text-gray-400 mb-4">
-            {t("explore")}
-          </p>
-          <div className="flex flex-wrap gap-3 justify-center">
+        {/* Quick links */}
+        <div className="pt-6 border-t border-border dark:border-dark-lighter">
+          <p className="text-xs text-text-tertiary mb-3">{t("explore")}</p>
+          <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              href="/#proyectos"
-              className="text-xs sm:text-sm text-primary hover:text-primary/80 transition-colors"
+              href="/#portfolio"
+              className="text-xs text-primary hover:text-primary-dark transition-colors font-medium"
             >
-              {t("myProjects")}
+              {t("portfolio")}
             </Link>
-            <span className="text-gray-600">•</span>
-            <Link
-              href="/#sobre-mi"
-              className="text-xs sm:text-sm text-primary hover:text-primary/80 transition-colors"
-            >
-              {t("aboutMe")}
-            </Link>
-            <span className="text-gray-600">•</span>
+            <span className="text-border dark:text-gray-700">•</span>
             <Link
               href="/#contacto"
-              className="text-xs sm:text-sm text-primary hover:text-primary/80 transition-colors"
+              className="text-xs text-primary hover:text-primary-dark transition-colors font-medium"
             >
               {t("contact")}
             </Link>

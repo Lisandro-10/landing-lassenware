@@ -6,6 +6,7 @@ import { useTheme } from "@/app/hooks/useTheme";
 import { useHydration } from "@/app/hooks/useHydration";
 import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
+import SlashLogo from "@/app/components/ui/SlashLogo";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,9 @@ export default function Navbar() {
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "unset";
-    return () => { document.body.style.overflow = "unset"; };
+    return () => {
+      document.body.style.overflow = "unset";
+    };
   }, [isOpen]);
 
   const handleLanguageChange = (newLocale: string) => {
@@ -36,10 +39,10 @@ export default function Navbar() {
   };
 
   const navItems = [
-    { name: t("projects"), href: "/#proyectos" },
-    { name: t("services"), href: "/#servicios" },
-    { name: t("about"), href: "/#experiencia" },
-    { name: t("contact"), href: "/#contacto" },
+    { name: t("portfolio"),     href: "/#portfolio" },
+    { name: t("process"),       href: "/#proceso" },
+    { name: t("testimonials"),  href: "/#testimonios" },
+    { name: t("contact"),       href: "/#contacto" },
   ];
 
   return (
@@ -47,19 +50,21 @@ export default function Navbar() {
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
           isScrolled
-            ? "backdrop-blur-md bg-white/80 dark:bg-dark/90 border-b border-border shadow-sm"
+            ? "backdrop-blur-md bg-white/90 dark:bg-dark/92 border-b border-border shadow-sm"
             : "bg-transparent"
         }`}
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
+
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">L</span>
-              </div>
-              <span className="font-bold text-lg tracking-tight text-text-primary dark:text-white">
-                Lisandro Andia
+            <Link href="/" className="flex items-center gap-2.5 group">
+              <SlashLogo size={32} />
+              <span
+                className="font-display font-bold text-lg tracking-tight text-text-primary dark:text-white
+                           group-hover:text-primary transition-colors duration-200"
+              >
+                Lassenware
               </span>
             </Link>
 
@@ -69,39 +74,94 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-sm text-text-secondary dark:text-gray-300 hover:text-primary transition-colors"
+                  className="text-sm font-medium text-text-secondary dark:text-gray-300
+                             hover:text-primary dark:hover:text-primary transition-colors duration-150"
                 >
                   {item.name}
                 </Link>
               ))}
 
-              {/* Language Switcher */}
+              {/* Language switcher */}
               <div className="relative">
                 <button
                   onClick={() => setLangMenuOpen(!langMenuOpen)}
-                  className="p-2 text-text-tertiary hover:text-primary transition-colors rounded-lg hover:bg-surface-tertiary dark:hover:bg-dark-lighter flex items-center gap-1"
+                  className="p-2 text-text-tertiary hover:text-primary transition-colors
+                             rounded-lg hover:bg-surface-tertiary dark:hover:bg-dark-lighter
+                             flex items-center gap-1"
                 >
-                  <FiGlobe size={18} />
-                  <span className="text-xs uppercase">{locale}</span>
+                  <FiGlobe size={17} />
+                  <span className="text-xs uppercase font-medium">{locale}</span>
                 </button>
                 {langMenuOpen && (
-                  <div className="absolute right-0 mt-2 w-32 bg-white dark:bg-dark-lighter border border-border dark:border-dark-lighter rounded-xl shadow-lg overflow-hidden">
-                    <button
-                      onClick={() => handleLanguageChange("es")}
-                      className={`w-full px-4 py-2.5 text-left text-sm transition-colors hover:bg-surface-tertiary dark:hover:bg-dark ${
-                        locale === "es" ? "text-primary font-medium" : "text-text-secondary dark:text-gray-300"
-                      }`}
-                    >
-                      {tLang("es")}
-                    </button>
-                    <button
-                      onClick={() => handleLanguageChange("en")}
-                      className={`w-full px-4 py-2.5 text-left text-sm transition-colors hover:bg-surface-tertiary dark:hover:bg-dark ${
-                        locale === "en" ? "text-primary font-medium" : "text-text-secondary dark:text-gray-300"
-                      }`}
-                    >
-                      {tLang("en")}
-                    </button>
+                  <div
+                    className="absolute right-0 mt-2 w-32 bg-white dark:bg-dark-lighter
+                               border border-border dark:border-dark-lighter rounded-xl
+                               shadow-lg overflow-hidden"
+                  >
+                    {["es", "en"].map((loc) => (
+                      <button
+                        key={loc}
+                        onClick={() => handleLanguageChange(loc)}
+                        className={`w-full px-4 py-2.5 text-left text-sm transition-colors
+                          hover:bg-surface-tertiary dark:hover:bg-dark
+                          ${locale === loc
+                            ? "text-primary font-semibold"
+                            : "text-text-secondary dark:text-gray-300"
+                          }`}
+                      >
+                        {tLang(loc)}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Theme toggle */}
+              {hydrated && (
+                <button
+                  onClick={toggleTheme}
+                  className="p-2 text-text-tertiary hover:text-primary transition-colors
+                             rounded-lg hover:bg-surface-tertiary dark:hover:bg-dark-lighter"
+                  aria-label="Toggle theme"
+                >
+                  {theme === "light" ? <FiMoon size={17} /> : <FiSun size={17} />}
+                </button>
+              )}
+
+              {/* CTA */}
+              <a
+                href="/#contacto"
+                className="btn-primary !py-2 !px-5 !text-sm"
+              >
+                {t("contact")}
+              </a>
+            </div>
+
+            {/* Mobile controls */}
+            <div className="md:hidden flex items-center gap-1">
+              <div className="relative">
+                <button
+                  onClick={() => setLangMenuOpen(!langMenuOpen)}
+                  className="p-2 text-text-tertiary hover:text-primary transition-colors"
+                  aria-label="Language"
+                >
+                  <FiGlobe size={18} />
+                </button>
+                {langMenuOpen && (
+                  <div
+                    className="absolute right-0 mt-2 w-32 bg-white dark:bg-dark-lighter
+                               border border-border rounded-xl shadow-lg overflow-hidden z-50"
+                  >
+                    {["es", "en"].map((loc) => (
+                      <button
+                        key={loc}
+                        onClick={() => handleLanguageChange(loc)}
+                        className={`w-full px-4 py-2.5 text-left text-sm
+                          ${locale === loc ? "text-primary font-semibold" : "text-text-secondary"}`}
+                      >
+                        {tLang(loc)}
+                      </button>
+                    ))}
                   </div>
                 )}
               </div>
@@ -109,47 +169,18 @@ export default function Navbar() {
               {hydrated && (
                 <button
                   onClick={toggleTheme}
-                  className="p-2 text-text-tertiary hover:text-primary transition-colors rounded-lg hover:bg-surface-tertiary dark:hover:bg-dark-lighter"
-                >
-                  {theme === "light" ? <FiMoon size={18} /> : <FiSun size={18} />}
-                </button>
-              )}
-            </div>
-
-            {/* Mobile Controls */}
-            <div className="md:hidden flex items-center gap-1">
-              <div className="relative">
-                <button
-                  onClick={() => setLangMenuOpen(!langMenuOpen)}
                   className="p-2 text-text-tertiary hover:text-primary transition-colors"
+                  aria-label="Toggle theme"
                 >
-                  <FiGlobe size={18} />
-                </button>
-                {langMenuOpen && (
-                  <div className="absolute right-0 mt-2 w-32 bg-white dark:bg-dark-lighter border border-border rounded-xl shadow-lg overflow-hidden z-50">
-                    <button
-                      onClick={() => handleLanguageChange("es")}
-                      className={`w-full px-4 py-2.5 text-left text-sm ${locale === "es" ? "text-primary" : "text-text-secondary"}`}
-                    >
-                      {tLang("es")}
-                    </button>
-                    <button
-                      onClick={() => handleLanguageChange("en")}
-                      className={`w-full px-4 py-2.5 text-left text-sm ${locale === "en" ? "text-primary" : "text-text-secondary"}`}
-                    >
-                      {tLang("en")}
-                    </button>
-                  </div>
-                )}
-              </div>
-
-              {hydrated && (
-                <button onClick={toggleTheme} className="p-2 text-text-tertiary hover:text-primary transition-colors">
                   {theme === "light" ? <FiMoon size={18} /> : <FiSun size={18} />}
                 </button>
               )}
 
-              <button onClick={() => setIsOpen(!isOpen)} className="p-2 text-text-primary dark:text-white hover:text-primary transition-colors">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="p-2 text-text-primary dark:text-white hover:text-primary transition-colors"
+                aria-label="Menu"
+              >
                 {isOpen ? <FiX size={22} /> : <FiMenu size={22} />}
               </button>
             </div>
@@ -157,20 +188,30 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
+      {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden fixed inset-0 top-16 z-40 bg-white/95 dark:bg-dark/95 backdrop-blur-xl">
-          <div className="px-4 pt-4 pb-6 space-y-1">
+        <div className="md:hidden fixed inset-0 top-16 z-40 bg-white/97 dark:bg-dark/97 backdrop-blur-xl">
+          <div className="px-4 pt-6 pb-6 space-y-1">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="block py-3 text-base text-text-secondary dark:text-gray-300 hover:text-primary rounded-lg px-3 transition-all"
+                className="block py-3 px-3 text-base font-medium text-text-secondary
+                           dark:text-gray-300 hover:text-primary rounded-xl transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
               </Link>
             ))}
+            <div className="pt-4">
+              <a
+                href="/#contacto"
+                className="btn-primary block text-center w-full"
+                onClick={() => setIsOpen(false)}
+              >
+                {t("contact")}
+              </a>
+            </div>
           </div>
         </div>
       )}

@@ -1,124 +1,177 @@
-# 💼 Lisandro Andia - Portfolio
+# Lassenware — Landing Page
 
-Portfolio profesional de Ingeniero en Sistemas, construido con Next.js 14, TypeScript y Tailwind CSS.
-
-🌐 **Live**: [lisandroandia.com](https://lisandro.lassenware.com)
+Sitio web oficial de [Lassenware](https://lassenware.com). Desarrollado con Next.js 14, Tailwind CSS y next-intl.
 
 ---
 
-## ✨ Features
+## Stack
 
-- 🌍 **Multilenguaje** (ES/EN) con next-intl
-- 🌓 **Dark/Light theme** con persistencia local
-- 🔍 **SEO optimizado** (meta tags, sitemap, robots.txt, Open Graph)
-- 📱 **Responsive design** mobile-first
-- 📧 **Formulario de contacto** con API Route segura
-- 📊 **Analytics** integrado (Vercel Analytics)
-- ⚡ **Performance optimizado** (imágenes comprimidas, SSG)
-- ♿ **Accesible** (semantic HTML, ARIA labels)
+- **Framework:** Next.js 14 (App Router)
+- **Estilos:** Tailwind CSS
+- **Internacionalización:** next-intl (ES / EN)
+- **Tipografías:** Space Grotesk (headings) + DM Sans (body)
+- **Formulario de contacto:** Web3Forms
+- **Deploy:** Vercel
+- **Analytics:** Vercel Analytics
 
 ---
 
-## 🛠️ Stack Tecnológico
-
-| Tecnología | Uso |
-|------------|-----|
-| **Next.js 14** | Framework React con App Router |
-| **TypeScript** | Type safety y mejor DX |
-| **Tailwind CSS** | Utility-first styling |
-| **next-intl** | Internacionalización |
-| **Lucide React** | Iconos modernos |
-| **Web3Forms** | Manejo de formularios |
-| **Vercel Analytics** | Tracking de visitantes |
-
-
-## 📁 Estructura del Proyecto
+## Estructura del proyecto
 
 ```
 src/
 ├── app/
-│   ├── [locale]/              # Rutas localizadas
-│   │   ├── page.tsx           # Página principal
-│   │   ├── servicios/         # Página de servicios
-│   │   ├── layout.tsx         # Layout con metadata
-│   │   ├── error.tsx          # Error boundary
-│   │   └── loading.tsx        # Loading state
-│   ├── api/
-│   │   └── contact/           # API Route para formulario
+│   ├── [locale]/
+│   │   ├── page.tsx              # Página principal
+│   │   ├── layout.tsx            # Layout con metadata por locale
+│   │   ├── not-found.tsx
+│   │   ├── error.tsx
+│   │   └── loading.tsx
 │   ├── components/
-│   │   ├── landing/           # Componentes de landing
-│   │   └── layout/            # Navbar, Footer
-│   ├── hooks/                 # Custom React hooks
-│   ├── layout.tsx             # Root layout
-│   ├── robots.ts              # SEO robots
-│   └── sitemap.ts             # SEO sitemap
-├── data/                      # Datos estáticos
-│   ├── projects.ts            # Portfolio projects
-│   ├── experiences.ts         # Work experiences
-│   └── servicios.ts           # Services offered
-├── i18n/                      # Configuración i18n
-│   ├── routing.ts
-│   └── request.ts
-├── messages/                  # Traducciones
-│   ├── es.json                # Español
-│   └── en.json                # English
-└── types/                     # TypeScript types
+│   │   ├── layout/
+│   │   │   ├── Navbar.tsx
+│   │   │   └── Footer.tsx
+│   │   ├── landing/
+│   │   │   ├── HeroSection.tsx
+│   │   │   ├── ProjectsSection.tsx
+│   │   │   ├── ProjectCard.tsx
+│   │   │   ├── ProcessSection.tsx
+│   │   │   ├── TestimonialsSection.tsx
+│   │   │   ├── AboutSection.tsx
+│   │   │   └── ContactSection.tsx
+│   │   └── ui/
+│   │       └── SlashLogo.tsx     # Brand mark — usa SVGs de /public/brand/
+│   ├── hooks/
+│   │   ├── useTheme.tsx
+│   │   └── useHydration.tsx
+│   ├── layout.tsx                # Root layout (fonts, analytics)
+│   ├── globals.css
+│   ├── sitemap.ts
+│   └── robots.ts
+├── data/
+│   ├── projects.ts               # Datos de proyectos del portfolio
+│   └── testimonials.ts           # Testimonios (actualizar con clientes reales)
+├── messages/
+│   ├── es.json                   # Contenido en español
+│   └── en.json                   # Contenido en inglés
+└── i18n/
+    ├── routing.ts
+    ├── navigation.ts
+    └── request.ts
 
 public/
-├── projects/                  # Imágenes de proyectos
-├── profile-about.jpg          # Foto de perfil
-└── *.png                      # Logos y assets
+├── brand/                        # SVGs del sistema de marca Lassenware
+│   ├── lassenware-mark-orange.svg
+│   ├── lassenware-mark-white.svg
+│   ├── lassenware-mark-black.svg
+│   ├── lassenware-horizontal-orange.svg
+│   ├── lassenware-horizontal-white.svg
+│   ├── lassenware-favicon-16.svg
+│   └── lassenware-favicon-32.svg
+├── projects/                     # Screenshots de proyectos del portfolio
+└── og-image.jpg                  # Open Graph image (1200×630)
 ```
 
 ---
 
-## 🚀 Deploy en Vercel
+## Secciones
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/)
-
-El deploy es automático en cada push a `main`.
-
----
-
-### Agregar idioma
-
-1. Agregar locale en `src/i18n/routing.ts`
-2. Crear `src/messages/{locale}.json`
-3. Actualizar `generateStaticParams` en layouts
+| Sección | ID | Descripción |
+|---|---|---|
+| Hero | — | Headline, tagline, CTAs WhatsApp + Ver proyectos |
+| Portfolio | `#portfolio` | Cards de proyectos — click en card abre demo en vivo |
+| Proceso | `#proceso` | 3 pasos: Idea → Discovery → Propuesta |
+| Testimonios | `#testimonios` | Cards con citas de clientes |
+| About | `#nosotros` | Historia de origen de Lassenware |
+| Contacto | `#contacto` | WhatsApp CTA + formulario Web3Forms |
 
 ---
 
-## 📊 Performance
+## Desarrollo local
 
-- ⚡ **Lighthouse Score**: 95+ (Performance, Accessibility, SEO)
-- 📦 **Bundle Size**: ~87 KB shared JS
-- 🖼️ **Images**: Optimizadas < 500 KB
-- 🎯 **First Load**: < 115 KB por página
+```bash
+# Instalar dependencias
+npm install
 
----
+# Configurar variables de entorno
+cp .env.example .env.local
+# Completar NEXT_PUBLIC_WEB3FORMS_KEY con tu clave de web3forms.com
 
-## 🔒 Seguridad
+# Iniciar servidor de desarrollo
+npm run dev
+```
 
-- ✅ API key protegida en server-side
-- ✅ Validación de formularios
-- ✅ Rate limiting listo (Web3Forms)
-- ✅ No expone secrets al cliente
-- ✅ HTTPS only en producción
-
-
-## 📄 Licencia
-
-Este proyecto es de código abierto para propósitos educativos.
-
-**Nota**: Las imágenes de proyectos y contenido personal son © Lisandro Andia.
+El sitio estará disponible en `http://localhost:3000` — redirige automáticamente a `/es`.
 
 ---
 
-## 👤 Autor
+## Variables de entorno
 
-**Lisandro Andia**
+```env
+NEXT_PUBLIC_WEB3FORMS_KEY=tu_clave_aqui
+```
 
-- Portfolio: [lisandroandia.com](https://lisandroandia.com)
-- GitHub: [@lisandro-10](https://github.com/lisandro-10)
-- LinkedIn: [Lisandro Andia](https://www.linkedin.com/in/lisandro-andia-3b46aa23a)
-- Email: lisandroandia14@gmail.com
+Obtené tu clave gratuita en [web3forms.com](https://web3forms.com).
+
+---
+
+## Internacionalización
+
+El contenido está completamente separado del código en `src/messages/`:
+
+- `es.json` — versión en español (default)
+- `en.json` — versión en inglés
+
+Para agregar o editar contenido, modificar los JSON directamente. Las keys están organizadas por sección: `Hero`, `Projects`, `Process`, `Testimonials`, `About`, `Contact`, `Footer`, etc.
+
+---
+
+## Agregar testimonios reales
+
+Editar `src/data/testimonials.ts`:
+
+```ts
+{
+  key: "cliente",
+  name: "Nombre Cliente",
+  role: "Cargo, Empresa",
+  initials: "NC",
+  photo: "/testimonials/cliente.jpg", // opcional
+  quote: "El testimonio del cliente...",
+}
+```
+
+Si se agrega foto, colocar el archivo en `public/testimonials/`.
+
+---
+
+## Agregar proyectos al portfolio
+
+Editar `src/data/projects.ts` y agregar la entrada con `key`, `image`, `tags`, `liveUrl` y `githubUrl`. Luego agregar las traducciones correspondientes en `es.json` y `en.json` bajo `Projects.items`.
+
+---
+
+## Deploy
+
+El proyecto está configurado para deploy automático en Vercel. Cada push a `main` dispara un nuevo deploy.
+
+Configuración necesaria en Vercel:
+- Variable de entorno: `NEXT_PUBLIC_WEB3FORMS_KEY`
+- Dominio: `lassenware.com`
+
+---
+
+## Paleta de colores
+
+| Token | Hex | Uso |
+|---|---|---|
+| Ember (primary) | `#E85D24` | CTAs, badges, acentos |
+| Spark | `#F5874F` | Hover states |
+| Glow | `#FFC49B` | Highlights suaves |
+| Void | `#111111` | Backgrounds dark, headlines |
+| Slate | `#2C2C2C` | Texto secundario en dark |
+| Cloud | `#F5F4F2` | Backgrounds de sección, cards |
+
+---
+
+Fundado por [Lisandro Andia](https://www.linkedin.com/in/lisandro-andia-3b46aa23a) — Mendoza, Argentina.

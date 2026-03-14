@@ -1,61 +1,105 @@
 "use client";
 
 import Image from "next/image";
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
+import { FiArrowRight, FiZap } from "react-icons/fi";
 import { useTranslations } from "next-intl";
 
 export default function HeroSection() {
   const t = useTranslations("Hero");
 
   return (
-    <section className="min-h-[calc(100vh-4rem)] flex items-center section-container">
-      <div className="w-full flex flex-col items-center text-center">
-        {/* Profile Photo */}
-        <div className="relative mb-6">
-          <div className="absolute -inset-4 bg-primary/20 blur-[40px] rounded-full" />
-          <div className="relative w-64 h-64 rounded-full border-4 border-white shadow-xl overflow-hidden">
-            <Image
-              src="/profile-about.jpg"
-              alt="Lisandro Andia"
-              fill
-              className="object-cover"
-              priority
-            />
+    <section className="min-h-[calc(100vh-4rem)] flex items-center section-container overflow-hidden">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+        {/* Left — Text */}
+        <div className="flex flex-col items-start">
+          {/* Founder byline */}
+          <span className="text-xs font-semibold tracking-widest text-primary uppercase mb-5">
+            {t("founder")}
+          </span>
+
+          {/* Headline */}
+          <h1 className="font-display font-bold text-5xl sm:text-6xl md:text-7xl text-text-primary dark:text-white leading-[1.05] mb-4">
+            Lassenware
+          </h1>
+
+          {/* Tagline */}
+          <p className="text-xl sm:text-2xl font-display font-semibold text-text-secondary dark:text-gray-300 mb-8">
+            {t("tagline")}
+          </p>
+
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+            <a
+              href="https://wa.me/5492612657201"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary flex items-center justify-center gap-2"
+            >
+              <FaWhatsapp size={18} />
+              <span>{t("whatsapp")}</span>
+            </a>
+            <a
+              href="/#portfolio"
+              className="btn-secondary flex items-center justify-center gap-2"
+            >
+              <span>{t("viewProjects")}</span>
+              <FiArrowRight size={16} />
+            </a>
           </div>
         </div>
 
-        {/* Text */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-text-primary dark:text-white mb-2">
-          {t("name")}
-        </h1>
-        <h2 className="text-lg sm:text-xl text-primary font-medium mb-4 max-w-md">
-          {t("role")}
-        </h2>
-        <p className="text-sm sm:text-base text-text-secondary dark:text-gray-400 max-w-md mb-6 leading-relaxed">
-          {t("description")}
-        </p>
+        {/* Right — Device mockup + badge */}
+        <div className="relative flex justify-center lg:justify-end">
+          {/* Background blob */}
+          <div
+            className="absolute inset-0 rounded-[2rem] bg-glow/30 dark:bg-primary/10"
+            style={{ transform: "rotate(-2deg) scale(1.05)" }}
+          />
 
-        {/* Social Links */}
-        <div className="flex items-center gap-4 mb-8">
-          <a href="mailto:lisandroandia14@gmail.com" className="text-text-tertiary hover:text-primary transition-colors">
-            <FiMail size={20} />
-          </a>
-          <a href="https://github.com/lisandro-10" target="_blank" rel="noopener noreferrer" className="text-text-tertiary hover:text-primary transition-colors">
-            <FiGithub size={20} />
-          </a>
-          <a href="https://www.linkedin.com/in/lisandro-andia-3b46aa23a" target="_blank" rel="noopener noreferrer" className="text-text-tertiary hover:text-primary transition-colors">
-            <FiLinkedin size={20} />
-          </a>
-        </div>
+          {/* Mockup card */}
+          <div className="relative z-10 w-full max-w-sm rounded-[2rem] bg-cloud dark:bg-dark-lighter border border-border dark:border-dark-lighter overflow-hidden shadow-xl">
+            <div className="p-4 pb-0">
+              {/* Browser chrome dots */}
+              <div className="flex gap-1.5 mb-3">
+                <div className="w-2.5 h-2.5 rounded-full bg-border dark:bg-gray-600" />
+                <div className="w-2.5 h-2.5 rounded-full bg-border dark:bg-gray-600" />
+                <div className="w-2.5 h-2.5 rounded-full bg-border dark:bg-gray-600" />
+              </div>
+              {/* Mockup image — reuse the ecommerce project screenshot */}
+              <div className="relative w-full aspect-[16/10] rounded-t-xl overflow-hidden bg-surface-tertiary dark:bg-dark">
+                <Image
+                  src="/projects/hexagon.png"
+                  alt="Lassenware project preview"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
 
-        {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-          <a href="/#servicios" className="btn-primary text-center">
-            {t("viewServices")}
-          </a>
-          <a href="/#contacto" className="btn-secondary text-center">
-            {t("contactMe")}
-          </a>
+          {/* Fast Delivery badge */}
+          <div
+            className="absolute bottom-4 -left-4 sm:left-4 z-20
+                       flex items-center gap-2.5
+                       bg-white dark:bg-dark-lighter
+                       border border-border dark:border-dark-lighter
+                       rounded-2xl shadow-lg px-4 py-3"
+          >
+            <div className="w-8 h-8 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+              <FiZap size={16} className="text-primary" />
+            </div>
+            <div>
+              <p className="text-xs font-display font-bold text-text-primary dark:text-white leading-tight">
+                {t("badge")}
+              </p>
+              <p className="text-[11px] text-text-tertiary leading-tight mt-0.5">
+                {t("badgeSub")}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

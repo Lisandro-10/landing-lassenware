@@ -1,16 +1,5 @@
 export const projects = [
   {
-    key: "ecommerce",
-    image: "/projects/ecommerce.png",
-    tags: [
-      { label: "Next.js", color: "blue" },
-      { label: "API MercadoPago", color: "purple" },
-      { label: "Tiendanube", color: "teal" },
-    ],
-    liveUrl: "https://main.d3btlvczyugl3y.amplifyapp.com",
-    githubUrl: "https://github.com/Lisandro-10/portal-lassenware",
-  },
-  {
     key: "lostilos",
     image: "/projects/lostilos.jpg",
     tags: [
@@ -56,7 +45,7 @@ export const projects = [
     liveUrl: "https://ando-ku.com",
     githubUrl: "https://github.com/Lisandro-10/ando-presskit",
   },
-    {
+  {
     key: "master-event",
     image: "/projects/master-event.png",
     tags: [
@@ -66,5 +55,16 @@ export const projects = [
     ],
     liveUrl: "https://masterevent.com.ar",
     githubUrl: "https://github.com/Lisandro-10/master-event",
+  },
+  {
+    key: "ecommerce",
+    image: "/projects/ecommerce.png",
+    tags: [
+      { label: "Next.js", color: "blue" },
+      { label: "API MercadoPago", color: "purple" },
+      { label: "Tiendanube", color: "teal" },
+    ],
+    liveUrl: "https://main.d31cda1a2l9y0n.amplifyapp.com/",
+    githubUrl: "https://github.com/Lisandro-10/portal-lassenware",
   },
 ];

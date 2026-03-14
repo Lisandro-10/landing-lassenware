@@ -1,18 +1,18 @@
 import HeroSection from "../components/landing/HeroSection";
-import TechStackSection from "../components/landing/TechStackSection";
 import ProjectsSection from "../components/landing/ProjectsSection";
+import ProcessSection from "../components/landing/ProcessSection";
+import TestimonialsSection from "../components/landing/TestimonialsSection";
 import AboutSection from "../components/landing/AboutSection";
-import ServicesSection from "../components/landing/ServicesSection";
 import ContactSection from "../components/landing/ContactSection";
 
 export default function Home() {
   return (
     <main className="pt-16">
       <HeroSection />
-      <TechStackSection />
       <ProjectsSection />
+      <ProcessSection />
+      <TestimonialsSection />
       <AboutSection />
-      <ServicesSection />
       <ContactSection />
     </main>
   );
