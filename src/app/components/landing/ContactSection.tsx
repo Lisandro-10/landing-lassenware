@@ -73,7 +73,7 @@ export default function ContactSection() {
 
             {/* WhatsApp CTA — primary action */}
             <a
-              href="https://wa.me/5492612657201"
+              href="https://wa.me/5492612567201"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary inline-flex items-center gap-2 mb-8"

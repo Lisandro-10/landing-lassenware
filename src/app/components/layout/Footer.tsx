@@ -39,7 +39,7 @@ export const Footer = () => {
               <FiMail size={17} />
             </a>
             <a
-              href="https://wa.me/5492612657201"
+              href="https://wa.me/5492612567201"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 bg-surface-tertiary dark:bg-dark-lighter text-text-tertiary

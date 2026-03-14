@@ -32,7 +32,7 @@ export default function HeroSection() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
             <a
-              href="https://wa.me/5492612657201"
+              href="https://wa.me/5492612567201"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary flex items-center justify-center gap-2"
