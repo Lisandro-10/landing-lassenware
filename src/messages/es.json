@@ -7,6 +7,7 @@
     "portfolio": "Portfolio",
     "process": "Proceso",
     "testimonials": "Testimonios",
+    "faq": "FAQ",
     "contact": "Contacto"
   },
   "Hero": {
@@ -47,7 +48,7 @@
       "ando-presskit": {
         "title": "Ando Press Kit",
         "description": "Press kit electrónico interactivo para un grupo de DJ de Progressive House de Mendoza, Argentina.",
-        "category": "MOBILE APP"
+        "category": "WEB DEVELOPMENT"
       },
       "master-event": {
         "title": "Master Event Web",
@@ -82,7 +83,33 @@
     "title": "La historia detrás de Lassenware",
     "body": "\"Lassen\" es el apodo que nació de Lisandro. Cuando empecé a tomar proyectos propios, quise que la empresa tuviera mi identidad — no un nombre genérico, sino algo que refleje la persona detrás del trabajo. Lassenware somos yo y los resultados que entrego.",
     "founder": "Lisandro Andia",
-    "founderRole": "Fundador e Ingeniero en Sistemas de Información"
+    "founderRole": "Fundador & Desarrollador Full Stack"
+  },
+  "FAQ": {
+    "title": "Preguntas frecuentes",
+    "subtitle": "Todo lo que necesitás saber antes de arrancar.",
+    "items": [
+      {
+        "question": "¿Qué tipo de proyectos desarrolla Lassenware?",
+        "answer": "Desarrollamos landing pages, tiendas e-commerce y sistemas de gestión a medida para PyMEs e individuos. Trabajamos desde sitios simples hasta aplicaciones web complejas con Next.js, React y Java Spring Boot."
+      },
+      {
+        "question": "¿Cuánto cuesta un sitio web?",
+        "answer": "Los precios varían según el alcance del proyecto. Contamos con planes desde una landing page básica hasta soluciones e-commerce completas con panel de administración. Contactanos para recibir una propuesta personalizada sin compromiso."
+      },
+      {
+        "question": "¿Cuánto tiempo tarda un proyecto?",
+        "answer": "Una landing page puede estar lista en 1 a 2 semanas. Un e-commerce o sistema de gestión a medida puede tomar entre 3 y 8 semanas dependiendo de la complejidad y los requerimientos específicos del proyecto."
+      },
+      {
+        "question": "¿Trabajan con clientes fuera de Mendoza?",
+        "answer": "Sí, trabajamos 100% de forma remota con clientes de toda Argentina y del exterior. La comunicación es fluida por WhatsApp, email o videollamada, sin importar la ubicación."
+      },
+      {
+        "question": "¿Qué tecnologías utilizan?",
+        "answer": "Trabajamos principalmente con Next.js, React y TypeScript en el frontend; Java con Spring Boot en el backend; y PostgreSQL o MySQL como base de datos. Para el deployment usamos AWS y Vercel, garantizando alta disponibilidad y rendimiento."
+      }
+    ]
   },
   "Contact": {
     "title": "¿Hablamos?",

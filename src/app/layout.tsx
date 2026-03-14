@@ -17,7 +17,8 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: "Lassenware — Hacemos tu vida más fácil",
-  description: "Soluciones digitales para tu negocio. Landing pages, e-commerce y sistemas a medida.",
+  description:
+    "Soluciones digitales para tu negocio. Landing pages, e-commerce y sistemas a medida.",
   icons: {
     icon: [
       { url: "/brand/lassenware-favicon-16.svg", sizes: "16x16", type: "image/svg+xml" },
@@ -26,6 +27,16 @@ export const metadata: Metadata = {
     shortcut: "/brand/lassenware-favicon-32.svg",
     apple: "/brand/lassenware-favicon-32.svg",
   },
+  // ─── Google Search Console ──────────────────────────────────────────────────
+  // 1. Ir a https://search.google.com/search-console
+  // 2. Agregar propiedad → "Prefijo de URL" → https://lassenware.com
+  // 3. Elegir verificación por "Etiqueta HTML"
+  // 4. Copiar SOLO el valor del atributo content (sin las comillas ni el tag)
+  // 5. Reemplazar "REEMPLAZAR_CON_TU_CODIGO_GSC" con ese valor
+  verification: {
+    google: "",
+  },
+  // ────────────────────────────────────────────────────────────────────────────
 };
 
 export default function RootLayout({

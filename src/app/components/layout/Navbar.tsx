@@ -42,6 +42,7 @@ export default function Navbar() {
     { name: t("portfolio"),     href: "/#portfolio" },
     { name: t("process"),       href: "/#proceso" },
     { name: t("testimonials"),  href: "/#testimonios" },
+    { name: t("faq"),           href: "/#faq" },
     { name: t("contact"),       href: "/#contacto" },
   ];
 

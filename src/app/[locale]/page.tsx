@@ -3,6 +3,7 @@ import ProjectsSection from "../components/landing/ProjectsSection";
 import ProcessSection from "../components/landing/ProcessSection";
 import TestimonialsSection from "../components/landing/TestimonialsSection";
 import AboutSection from "../components/landing/AboutSection";
+import FaqSection from "../components/landing/FaqSection";
 import ContactSection from "../components/landing/ContactSection";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <ProcessSection />
       <TestimonialsSection />
       <AboutSection />
+      <FaqSection />
       <ContactSection />
     </main>
   );

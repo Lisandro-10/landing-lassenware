@@ -7,6 +7,7 @@
     "portfolio": "Portfolio",
     "process": "Process",
     "testimonials": "Testimonials",
+    "faq": "FAQ",
     "contact": "Contact"
   },
   "Hero": {
@@ -47,7 +48,7 @@
       "ando-presskit": {
         "title": "Ando Press Kit",
         "description": "Interactive electronic press kit for a Progressive House DJ group from Mendoza, Argentina.",
-        "category": "MOBILE APP"
+        "category": "WEB DEVELOPMENT"
       },
       "master-event": {
         "title": "Master Event Web",
@@ -82,7 +83,33 @@
     "title": "The story behind Lassenware",
     "body": "\"Lassen\" is the nickname that comes from Lisandro. When I started taking on my own projects, I wanted the company to carry my identity — not a generic name, but something that reflects the person behind the work. Lassenware is me and the results I deliver.",
     "founder": "Lisandro Andia",
-    "founderRole": "Founder & Systems Engineer"
+    "founderRole": "Founder & Full Stack Developer"
+  },
+  "FAQ": {
+    "title": "Frequently asked questions",
+    "subtitle": "Everything you need to know before getting started.",
+    "items": [
+      {
+        "question": "What kind of projects does Lassenware develop?",
+        "answer": "We develop landing pages, e-commerce stores, and custom management systems for SMEs and individuals — from simple sites to complex web applications built with Next.js, React, and Java Spring Boot."
+      },
+      {
+        "question": "How much does a website cost?",
+        "answer": "Pricing varies depending on the project scope. We offer plans ranging from basic landing pages to full e-commerce solutions with admin panels. Contact us for a personalized, no-commitment quote."
+      },
+      {
+        "question": "How long does a project take?",
+        "answer": "A landing page can be ready in 1 to 2 weeks. An e-commerce site or custom management system typically takes between 3 and 8 weeks, depending on the complexity and specific requirements."
+      },
+      {
+        "question": "Do you work with clients outside Mendoza?",
+        "answer": "Yes, we work 100% remotely with clients across Argentina and abroad. Communication is seamless via WhatsApp, email, or video call, regardless of location."
+      },
+      {
+        "question": "What technologies do you use?",
+        "answer": "We primarily work with Next.js, React, and TypeScript on the frontend; Java with Spring Boot on the backend; and PostgreSQL or MySQL for databases. For deployment, we use AWS and Vercel, ensuring high availability and performance."
+      }
+    ]
   },
   "Contact": {
     "title": "Let's talk?",
