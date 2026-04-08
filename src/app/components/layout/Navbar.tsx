@@ -28,9 +28,7 @@ export default function Navbar() {
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "unset";
-    return () => {
-      document.body.style.overflow = "unset";
-    };
+    return () => { document.body.style.overflow = "unset"; };
   }, [isOpen]);
 
   const handleLanguageChange = (newLocale: string) => {
@@ -39,11 +37,11 @@ export default function Navbar() {
   };
 
   const navItems = [
-    { name: t("portfolio"),     href: "/#portfolio" },
-    { name: t("process"),       href: "/#proceso" },
-    { name: t("testimonials"),  href: "/#testimonios" },
-    { name: t("faq"),           href: "/#faq" },
-    { name: t("contact"),       href: "/#contacto" },
+    { name: t("portfolio"),    href: "/#portfolio" },
+    { name: t("process"),      href: "/#servicios" },
+    { name: t("testimonials"), href: "/#testimonios" },
+    { name: t("faq"),          href: "/#faq" },
+    { name: t("contact"),      href: "/#contacto" },
   ];
 
   return (
@@ -51,7 +49,7 @@ export default function Navbar() {
       <nav
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
           isScrolled
-            ? "backdrop-blur-md bg-white/90 dark:bg-dark/92 border-b border-border shadow-sm"
+            ? "backdrop-blur-xl bg-white/75 dark:bg-void/75 border-b border-white/20 dark:border-white/[0.06] shadow-sm"
             : "bg-transparent"
         }`}
       >
@@ -95,8 +93,9 @@ export default function Navbar() {
                 </button>
                 {langMenuOpen && (
                   <div
-                    className="absolute right-0 mt-2 w-32 bg-white dark:bg-dark-lighter
-                               border border-border dark:border-dark-lighter rounded-xl
+                    className="absolute right-0 mt-2 w-32
+                               bg-white/90 dark:bg-dark-lighter/90 backdrop-blur-lg
+                               border border-white/30 dark:border-white/10 rounded-xl
                                shadow-lg overflow-hidden"
                   >
                     {["es", "en"].map((loc) => (
@@ -130,10 +129,7 @@ export default function Navbar() {
               )}
 
               {/* CTA */}
-              <a
-                href="/#contacto"
-                className="btn-primary !py-2 !px-5 !text-sm"
-              >
+              <a href="/#contacto" className="btn-primary !py-2 !px-5 !text-sm">
                 {t("contact")}
               </a>
             </div>
@@ -191,7 +187,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden fixed inset-0 top-16 z-40 bg-white/97 dark:bg-dark/97 backdrop-blur-xl">
+        <div className="md:hidden fixed inset-0 top-16 z-40 bg-white/97 dark:bg-void/97 backdrop-blur-xl">
           <div className="px-4 pt-6 pb-6 space-y-1">
             {navItems.map((item) => (
               <Link

@@ -5,7 +5,7 @@
   },
   "Navbar": {
     "portfolio": "Portfolio",
-    "process": "Process",
+    "process": "Services",
     "testimonials": "Testimonials",
     "faq": "FAQ",
     "contact": "Contact"
@@ -133,8 +133,47 @@
       "error": "Something went wrong. Please try again."
     }
   },
+  "Services": {
+    "title": "What we do",
+    "subtitle": "Solutions designed to grow with your business.",
+    "cta": "START NOW",
+    "cards": {
+      "landing": {
+        "title": "Websites & Landing Pages",
+        "pitch": "Launch in 2 weeks.",
+        "description": "From high-impact landing pages to corporate sites. Design, development, and deployment included."
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "pitch": "Sell from day one.",
+        "description": "Full online stores with payment integration, product management, and admin panel."
+      },
+      "custom": {
+        "title": "Custom Systems",
+        "pitch": "Your process, digitized.",
+        "description": "Custom web applications that automate and scale your operation."
+      }
+    }
+  },
+  "Philosophy": {
+    "eyebrow": "OUR PHILOSOPHY",
+    "headline": "Fast. For real.",
+    "body": "We're not a massive agency with layers of bureaucracy. When you reach out to Lassenware, you talk directly to the person building your product. That means fast decisions, less friction, and results you can actually see.",
+    "stat1Value": "2 wks",
+    "stat1Label": "Average delivery",
+    "stat2Value": "6+",
+    "stat2Label": "Projects launched",
+    "stat3Value": "1",
+    "stat3Label": "Point of contact",
+    "cta": "Let's start today",
+    "founder": "Lisandro Andia",
+    "founderRole": "Founder & Full Stack Developer"
+  },
   "Footer": {
     "tagline": "We make your life easier.",
+    "readyToStart": "Ready to get started?",
+    "readySubtitle": "Tell us your idea and we'll build it together.",
+    "cta": "Let's talk",
     "rights": "© 2026 Lassenware. We make your life easier."
   },
   "NotFound": {

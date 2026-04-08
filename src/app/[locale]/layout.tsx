@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "../components/layout/Navbar";
 import { Footer } from "../components/layout/Footer";
+import SmoothScroll from "../components/ui/SmoothScroll";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -129,6 +130,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
+      <SmoothScroll />
       {/* JSON-LD structured data — rendered server-side for all pages */}
       <JsonLd locale={locale} />
       <Navbar />

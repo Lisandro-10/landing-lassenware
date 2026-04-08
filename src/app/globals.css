@@ -125,10 +125,6 @@ html.dark .text-text-tertiary {
   @apply text-gray-400;
 }
 
-html.dark nav {
-  background-color: rgba(17, 17, 17, 0.92) !important;
-}
-
 html.dark input,
 html.dark textarea,
 html.dark select {

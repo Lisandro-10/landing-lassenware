@@ -5,7 +5,7 @@
   },
   "Navbar": {
     "portfolio": "Portfolio",
-    "process": "Proceso",
+    "process": "Servicios",
     "testimonials": "Testimonios",
     "faq": "FAQ",
     "contact": "Contacto"
@@ -133,8 +133,47 @@
       "error": "Algo salió mal. Intentá de nuevo."
     }
   },
+  "Services": {
+    "title": "Lo que hacemos",
+    "subtitle": "Soluciones diseñadas para crecer con tu negocio.",
+    "cta": "EMPEZAR AHORA",
+    "cards": {
+      "landing": {
+        "title": "Sitios Web & Landing Pages",
+        "pitch": "Lanzá en 2 semanas.",
+        "description": "Desde landing pages de alto impacto hasta sitios corporativos. Diseño, desarrollo y deploy incluidos."
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "pitch": "Vendé desde el día uno.",
+        "description": "Tiendas online completas con MercadoPago, gestión de productos y panel de administración."
+      },
+      "custom": {
+        "title": "Sistemas a Medida",
+        "pitch": "Tu proceso, digitalizado.",
+        "description": "Aplicaciones web personalizadas que automatizan y escalan tu operación."
+      }
+    }
+  },
+  "Philosophy": {
+    "eyebrow": "NUESTRA FILOSOFÍA",
+    "headline": "Rápido. En serio.",
+    "body": "No somos una agencia enorme con capas de burocracia. Cuando contactás a Lassenware, hablás directamente con quien va a construir tu producto. Eso se traduce en decisiones rápidas, menos fricción y resultados que podés ver.",
+    "stat1Value": "2 sem",
+    "stat1Label": "Promedio de entrega",
+    "stat2Value": "6+",
+    "stat2Label": "Proyectos lanzados",
+    "stat3Value": "1",
+    "stat3Label": "Punto de contacto",
+    "cta": "Empecemos hoy",
+    "founder": "Lisandro Andia",
+    "founderRole": "Fundador & Desarrollador Full Stack"
+  },
   "Footer": {
     "tagline": "Hacemos tu vida más fácil.",
+    "readyToStart": "¿Listo para empezar?",
+    "readySubtitle": "Contanos tu idea y lo armamos juntos.",
+    "cta": "Hablemos",
     "rights": "© 2026 Lassenware. Hacemos tu vida más fácil."
   },
   "NotFound": {

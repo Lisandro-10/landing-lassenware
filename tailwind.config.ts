@@ -72,6 +72,46 @@ const config: Config = {
         body: ["var(--font-dm-sans)", "sans-serif"],
         sans: ["var(--font-dm-sans)", "sans-serif"],
       },
+
+      boxShadow: {
+        "glow-sm": "0 0 20px rgba(232, 93, 36, 0.15)",
+        "glow":    "0 0 40px rgba(232, 93, 36, 0.2)",
+        "glow-lg": "0 0 80px rgba(232, 93, 36, 0.25)",
+      },
+
+      animation: {
+        "marquee":    "marquee 28s linear infinite",
+        "float":      "float 6s ease-in-out infinite",
+        "float-slow": "float 9s ease-in-out 2s infinite",
+        "glow-pulse": "glow-pulse 3s ease-in-out infinite",
+        "aurora-1":   "aurora1 10s ease-in-out infinite",
+        "aurora-2":   "aurora2 13s ease-in-out 1.5s infinite",
+      },
+
+      keyframes: {
+        marquee: {
+          "0%":   { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0px) scale(1)" },
+          "50%":      { transform: "translateY(-22px) scale(1.04)" },
+        },
+        "glow-pulse": {
+          "0%, 100%": { opacity: "0.35" },
+          "50%":      { opacity: "0.7" },
+        },
+        aurora1: {
+          "0%, 100%": { transform: "translate(0%, 0%) scale(1)" },
+          "40%":      { transform: "translate(8%, -12%) scale(1.12)" },
+          "70%":      { transform: "translate(-4%, 6%) scale(0.94)" },
+        },
+        aurora2: {
+          "0%, 100%": { transform: "translate(0%, 0%) scale(1)" },
+          "35%":      { transform: "translate(-10%, 8%) scale(1.08)" },
+          "65%":      { transform: "translate(6%, -5%) scale(0.96)" },
+        },
+      },
     },
   },
   plugins: [],
