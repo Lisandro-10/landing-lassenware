@@ -37,21 +37,20 @@ export default function Navbar() {
   };
 
   const navItems = [
-    { name: t("portfolio"),    href: "/#portfolio" },
-    { name: t("process"),      href: "/#servicios" },
+    { name: t("projects"), href: "/#projects" },
+    { name: t("about"), href: "/about-us" },
     { name: t("testimonials"), href: "/#testimonios" },
-    { name: t("faq"),          href: "/#faq" },
-    { name: t("contact"),      href: "/#contacto" },
+    { name: t("faq"), href: "/#faq" },
+    { name: t("contact"), href: "/#contacto" },
   ];
 
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          isScrolled
-            ? "backdrop-blur-xl bg-white/75 dark:bg-void/75 border-b border-white/20 dark:border-white/[0.06] shadow-sm"
-            : "bg-transparent"
-        }`}
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
+          ? "backdrop-blur-xl bg-white/75 dark:bg-void/75 border-b border-white/20 dark:border-white/[0.06] shadow-sm"
+          : "bg-transparent"
+          }`}
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">

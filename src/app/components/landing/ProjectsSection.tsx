@@ -33,7 +33,7 @@ export default function ProjectsSection() {
   const t = useTranslations("Projects");
 
   return (
-    <section id="portfolio" className="section-container">
+    <section id="projects" className="section-container">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <div className="mb-10 sm:mb-14">
@@ -57,7 +57,6 @@ export default function ProjectsSection() {
                 image={project.image}
                 tags={project.tags}
                 liveUrl={project.liveUrl}
-                githubUrl={project.githubUrl}
               />
             </ParallaxCard>
           ))}

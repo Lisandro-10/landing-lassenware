@@ -9,8 +9,9 @@ const TECH_ITEMS = [
   "AWS",
   "Vercel",
   "MercadoPago",
+  "Stripe",
   "Tiendanube",
-  "Node.js",
+  "Firebase",
 ];
 
 export default function TechMarquee() {

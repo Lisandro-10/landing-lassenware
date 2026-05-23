@@ -4,7 +4,8 @@
     "description": "Digital solutions for your business. Landing pages, e-commerce and custom systems. Founded by Lisandro Andia, Mendoza."
   },
   "Navbar": {
-    "portfolio": "Portfolio",
+    "about": "About us",
+    "projects": "Projects",
     "process": "Services",
     "testimonials": "Testimonials",
     "faq": "FAQ",
@@ -19,16 +20,16 @@
     "badgeSub": "Agile and robust solutions"
   },
   "Projects": {
-    "title": "Our Portfolio",
-    "subtitle": "Selection of recent works",
+    "title": "Featured Projects",
+    "subtitle": "Some of our success stories",
     "liveDemo": "Live Demo",
     "sourceCode": "Source",
     "privateRepo": "Private Repo",
     "items": {
-      "ecommerce": {
-        "title": "E-commerce Solution",
-        "description": "A complete e-commerce web application featuring MercadoPago integration and Tiendanube platform.",
-        "category": "E-COMMERCE"
+      "nofumomas": {
+        "title": "No Fumo más Web Platform",
+        "description": "Platform to help people quit smoking through a course given by health professionals.",
+        "category": "SAAS"
       },
       "lostilos": {
         "title": "Club Management System",
@@ -83,7 +84,7 @@
     "title": "The story behind Lassenware",
     "body": "\"Lassen\" is the nickname that comes from Lisandro. When I started taking on my own projects, I wanted the company to carry my identity — not a generic name, but something that reflects the person behind the work. Lassenware is me and the results I deliver.",
     "founder": "Lisandro Andia",
-    "founderRole": "Founder & Full Stack Developer"
+    "founderRole": "Founder & Systems Engineer"
   },
   "FAQ": {
     "title": "Frequently asked questions",

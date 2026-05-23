@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useRef, useState } from "react";
-import { FiGithub, FiLock } from "react-icons/fi";
+import { FiExternalLink, FiGithub, FiLock } from "react-icons/fi";
 import { useTranslations } from "next-intl";
 
 interface ProjectTag {
@@ -17,8 +17,16 @@ interface ProjectCardProps {
   image: string;
   tags: ProjectTag[];
   liveUrl?: string | null;
-  githubUrl?: string | null;
 }
+
+const tagColorStyles: Record<string, string> = {
+  blue: "bg-tag-blue-bg text-tag-blue-text dark:bg-tag-blue-text/20 dark:text-tag-blue-bg",
+  purple: "bg-tag-purple-bg text-tag-purple-text dark:bg-tag-purple-text/20 dark:text-tag-purple-bg",
+  teal: "bg-tag-teal-bg text-tag-teal-text dark:bg-tag-teal-text/20 dark:text-tag-teal-bg",
+  orange: "bg-tag-orange-bg text-tag-orange-text dark:bg-tag-orange-text/20 dark:text-tag-orange-bg",
+  green: "bg-tag-green-bg text-tag-green-text dark:bg-tag-green-text/20 dark:text-tag-green-bg",
+  rose: "bg-tag-rose-bg text-tag-rose-text dark:bg-tag-rose-text/20 dark:text-tag-rose-bg",
+};
 
 export default function ProjectCard({
   title,
@@ -27,7 +35,6 @@ export default function ProjectCard({
   image,
   tags,
   liveUrl,
-  githubUrl,
 }: ProjectCardProps) {
   const t = useTranslations("Projects");
   const cardRef = useRef<HTMLDivElement>(null);
@@ -53,11 +60,11 @@ export default function ProjectCard({
       onKeyDown={
         liveUrl
           ? (e) => {
-              if (e.key === "Enter" || e.key === " ") {
-                e.preventDefault();
-                window.open(liveUrl, "_blank", "noopener,noreferrer");
-              }
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              window.open(liveUrl, "_blank", "noopener,noreferrer");
             }
+          }
           : undefined
       }
     >
@@ -94,25 +101,32 @@ export default function ProjectCard({
           {description}
         </p>
 
-        <div className="flex items-center pt-3.5 border-t border-border-light dark:border-dark-lighter">
-          {githubUrl ? (
+        <div className="flex flex-wrap gap-2 pt-3.5 mb-4">
+          {tags.map((tag, index) => (
+            <span
+              key={index}
+              className={`text-[11px] font-medium px-2.5 py-1 rounded-full ${tagColorStyles[tag.color] || "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-300"
+                }`}
+            >
+              {tag.label}
+            </span>
+          ))}
+        </div>
+
+        {liveUrl &&
+          <div className="flex items-center pt-3.5 border-t border-border-light dark:border-dark-lighter">
             <a
-              href={githubUrl}
+              href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
               className="flex items-center gap-1.5 text-sm font-medium text-text-tertiary hover:text-text-primary dark:hover:text-white transition-colors"
             >
-              <FiGithub size={13} />
-              <span>{t("sourceCode")}</span>
+              <FiExternalLink size={13} />
+              <span>{t("liveDemo")}</span>
             </a>
-          ) : (
-            <span className="flex items-center gap-1.5 text-sm text-text-tertiary">
-              <FiLock size={13} />
-              <span>{t("privateRepo")}</span>
-            </span>
-          )}
-        </div>
+          </div>
+        }
       </div>
     </div>
   );

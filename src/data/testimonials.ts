@@ -12,19 +12,19 @@ export interface Testimonial {
 
 export const testimonials: Testimonial[] = [
   {
-    key: "juan",
-    name: "Juan Delgado",
-    role: "CEO, Logistics SA",
-    initials: "JD",
+    key: "german",
+    name: "German Maravilla",
+    role: "Co-Founder, Nofumomas",
+    initials: "GM",
     quote:
-      "Trabajar con Lassenware transformó nuestra logística. La atención de Lisandro y su equipo fue personalizada desde el día uno.",
+      "Desde el primer momento, Lisandro entendió el proyecto y lo llevó adelante con profesionalismo y dedicación. La plataforma quedó excelente.",
   },
   {
-    key: "maria",
-    name: "María Suárez",
-    role: "Directora Médica",
-    initials: "MS",
+    key: "masterevent",
+    name: "Juan Ignacion Lemmo",
+    role: "Fundador, Master Event",
+    initials: "JL",
     quote:
-      "La app que desarrollaron para nuestro portal de salud superó todas las expectativas de nuestros pacientes.",
+      "Lo que más valoro es la claridad y la velocidad. En pocas semanas teníamos la primera versión funcionando y pudimos empezar a probarla.",
   },
 ];

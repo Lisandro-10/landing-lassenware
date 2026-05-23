@@ -4,7 +4,8 @@
     "description": "Soluciones digitales para tu negocio. Landing pages, e-commerce y sistemas a medida. Fundado por Lisandro Andia, Mendoza."
   },
   "Navbar": {
-    "portfolio": "Portfolio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
     "process": "Servicios",
     "testimonials": "Testimonios",
     "faq": "FAQ",
@@ -19,16 +20,16 @@
     "badgeSub": "Soluciones ágiles y robustas"
   },
   "Projects": {
-    "title": "Nuestro Portfolio",
-    "subtitle": "Selección de trabajos recientes",
+    "title": "Proyectos Destacados",
+    "subtitle": "Algunos de nuestros casos de éxito",
     "liveDemo": "Demo en Vivo",
     "sourceCode": "Código",
     "privateRepo": "Repo Privado",
     "items": {
-      "ecommerce": {
-        "title": "Solución E-commerce",
-        "description": "Aplicación web completa para e-commerce con integración de MercadoPago y plataforma Tiendanube.",
-        "category": "E-COMMERCE"
+      "nofumomas": {
+        "title": "Plataforma Web No Fumo más",
+        "description": "Plataforma para ayudar a las personas a dejar de fumar mediante un curso dictado por profesionales de la salud.",
+        "category": "SAAS"
       },
       "lostilos": {
         "title": "Sistema de Gestión de Socios",
@@ -83,7 +84,7 @@
     "title": "La historia detrás de Lassenware",
     "body": "\"Lassen\" es el apodo que nació de Lisandro. Cuando empecé a tomar proyectos propios, quise que la empresa tuviera mi identidad — no un nombre genérico, sino algo que refleje la persona detrás del trabajo. Lassenware somos yo y los resultados que entrego.",
     "founder": "Lisandro Andia",
-    "founderRole": "Fundador & Desarrollador Full Stack"
+    "founderRole": "Fundador & Ingeniero en Sistemas"
   },
   "FAQ": {
     "title": "Preguntas frecuentes",
