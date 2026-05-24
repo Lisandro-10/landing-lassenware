@@ -100,7 +100,7 @@
       },
       {
         "question": "How long does a project take?",
-        "answer": "A landing page can be ready in 1 to 2 weeks. An e-commerce site or custom management system typically takes between 3 and 8 weeks, depending on the complexity and specific requirements."
+        "answer": "A landing page can be ready in 2 to 3 weeks. An e-commerce site or custom management system typically takes between 3 and 8 weeks, depending on the complexity and specific requirements."
       },
       {
         "question": "Do you work with clients outside Mendoza?",
@@ -117,7 +117,7 @@
     "subtitle": "We're ready to take your project to the next level.",
     "whatsappCta": "Message us on WhatsApp",
     "email": "contacto@lassenware.com",
-    "phone": "+54 9 11 0000-0000",
+    "phone": "+54 9 2612567201",
     "quickConnect": "Direct contact",
     "location": "Mendoza, Argentina",
     "form": {
@@ -160,7 +160,7 @@
     "eyebrow": "OUR PHILOSOPHY",
     "headline": "Fast. For real.",
     "body": "We're not a massive agency with layers of bureaucracy. When you reach out to Lassenware, you talk directly to the person building your product. That means fast decisions, less friction, and results you can actually see.",
-    "stat1Value": "2 wks",
+    "stat1Value": "3 wks",
     "stat1Label": "Average delivery",
     "stat2Value": "6+",
     "stat2Label": "Projects launched",
@@ -168,7 +168,7 @@
     "stat3Label": "Point of contact",
     "cta": "Let's start today",
     "founder": "Lisandro Andia",
-    "founderRole": "Founder & Full Stack Developer"
+    "founderRole": "Founder & Systems Engineer"
   },
   "Footer": {
     "tagline": "We make your life easier.",

@@ -4,7 +4,7 @@
     "description": "Soluciones digitales para tu negocio. Landing pages, e-commerce y sistemas a medida. Fundado por Lisandro Andia, Mendoza."
   },
   "Navbar": {
-    "about": "Sobre mí",
+    "about": "Quiénes somos",
     "projects": "Proyectos",
     "process": "Servicios",
     "testimonials": "Testimonios",
@@ -100,7 +100,7 @@
       },
       {
         "question": "¿Cuánto tiempo tarda un proyecto?",
-        "answer": "Una landing page puede estar lista en 1 a 2 semanas. Un e-commerce o sistema de gestión a medida puede tomar entre 3 y 8 semanas dependiendo de la complejidad y los requerimientos específicos del proyecto."
+        "answer": "Una landing page puede estar lista en 2 a 3 semanas. Un e-commerce o sistema de gestión a medida puede tomar entre 3 y 8 semanas dependiendo de la complejidad y los requerimientos específicos del proyecto."
       },
       {
         "question": "¿Trabajan con clientes fuera de Mendoza?",
@@ -117,7 +117,7 @@
     "subtitle": "Estamos listos para llevar tu proyecto al siguiente nivel.",
     "whatsappCta": "Escribinos por WhatsApp",
     "email": "contacto@lassenware.com",
-    "phone": "+54 9 11 0000-0000",
+    "phone": "+54 9 2612567201",
     "quickConnect": "Contacto directo",
     "location": "Mendoza, Argentina",
     "form": {
@@ -160,7 +160,7 @@
     "eyebrow": "NUESTRA FILOSOFÍA",
     "headline": "Rápido. En serio.",
     "body": "No somos una agencia enorme con capas de burocracia. Cuando contactás a Lassenware, hablás directamente con quien va a construir tu producto. Eso se traduce en decisiones rápidas, menos fricción y resultados que podés ver.",
-    "stat1Value": "2 sem",
+    "stat1Value": "3 sem",
     "stat1Label": "Promedio de entrega",
     "stat2Value": "6+",
     "stat2Label": "Proyectos lanzados",
@@ -168,7 +168,7 @@
     "stat3Label": "Punto de contacto",
     "cta": "Empecemos hoy",
     "founder": "Lisandro Andia",
-    "founderRole": "Fundador & Desarrollador Full Stack"
+    "founderRole": "Fundador & Ingeniero en Sistemas"
   },
   "Footer": {
     "tagline": "Hacemos tu vida más fácil.",

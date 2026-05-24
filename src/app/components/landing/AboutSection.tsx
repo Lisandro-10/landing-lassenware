@@ -16,7 +16,7 @@ export default function AboutSection() {
             <div className="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl overflow-hidden
                             border-4 border-white dark:border-dark shadow-xl flex-shrink-0">
               <Image
-                src="/profile-about.jpg"
+                src="/profile-about.JPEG"
                 alt="Lisandro Andia — Fundador de Lassenware"
                 fill
                 className="object-cover"
