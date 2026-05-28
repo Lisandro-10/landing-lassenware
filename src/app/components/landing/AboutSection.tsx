@@ -12,7 +12,7 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
 
           {/* Left — photo */}
-          <div className="flex justify-center md:justify-start">
+          <div className="flex justify-center">
             <div className="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl overflow-hidden
                             border-4 border-white dark:border-dark shadow-xl flex-shrink-0">
               <Image
@@ -35,13 +35,36 @@ export default function AboutSection() {
               {t("title")}
             </h2>
 
-            <blockquote
-              className="text-base sm:text-lg text-text-secondary dark:text-gray-300
-                         leading-relaxed mb-8 border-l-4 border-primary pl-5
-                         italic"
-            >
-              {t("body")}
-            </blockquote>
+            <div className="border-l-4 border-primary pl-5 mb-8 space-y-3">
+              <p className="text-base sm:text-lg text-text-secondary dark:text-gray-300 leading-relaxed italic">
+                {t("intro1")}
+              </p>
+              <p className="text-base sm:text-lg text-text-secondary dark:text-gray-300 leading-relaxed italic">
+                {t("intro2")}
+              </p>
+            </div>
+
+            <p className="font-display font-bold text-xs uppercase tracking-widest text-primary mb-3">
+              {t("valuesTitle")}
+            </p>
+            <div className="space-y-4 mb-8">
+              <div>
+                <p className="font-display font-bold text-sm text-text-primary dark:text-white mb-1">
+                  {t("value1Title")}
+                </p>
+                <p className="text-sm text-text-secondary dark:text-gray-400 leading-relaxed">
+                  {t("value1Body")}
+                </p>
+              </div>
+              <div>
+                <p className="font-display font-bold text-sm text-text-primary dark:text-white mb-1">
+                  {t("value2Title")}
+                </p>
+                <p className="text-sm text-text-secondary dark:text-gray-400 leading-relaxed">
+                  {t("value2Body")}
+                </p>
+              </div>
+            </div>
 
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">

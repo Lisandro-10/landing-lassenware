@@ -82,7 +82,13 @@
   },
   "About": {
     "title": "La historia detrás de Lassenware",
-    "body": "\"Lassen\" es el apodo que nació de Lisandro. Cuando empecé a tomar proyectos propios, quise que la empresa tuviera mi identidad — no un nombre genérico, sino algo que refleje la persona detrás del trabajo. Lassenware somos yo y los resultados que entrego.",
+    "intro1": "Lassenware nació para darle forma profesional a algo que ya estaba pasando: clientes que necesitaban soluciones digitales reales, y la capacidad de construirlas.",
+    "intro2": "Me importa tanto que el código funcione como que entiendas qué estamos construyendo y por qué. La jerga técnica se queda afuera — lo que llega a tu pantalla tiene que tener sentido.",
+    "valuesTitle": "Nuestros valores",
+    "value1Title": "Responsabilidad",
+    "value1Body": "Tomamos decisiones de forma consciente y asumimos las consecuencias.",
+    "value2Title": "Transparencia",
+    "value2Body": "Nos comunicamos de forma clara y honesta. Bajamos a tierra la terminología técnica para que siempre sepas qué estamos haciendo y por qué.",
     "founder": "Lisandro Andia",
     "founderRole": "Fundador & Ingeniero en Sistemas"
   },

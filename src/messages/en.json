@@ -82,7 +82,13 @@
   },
   "About": {
     "title": "The story behind Lassenware",
-    "body": "\"Lassen\" is the nickname that comes from Lisandro. When I started taking on my own projects, I wanted the company to carry my identity — not a generic name, but something that reflects the person behind the work. Lassenware is me and the results I deliver.",
+    "intro1": "Lassenware was built to give professional shape to something that was already happening: clients who needed real digital solutions, and the capability to build them.",
+    "intro2": "I care as much about the code working as I do about you understanding what we're building and why. Technical jargon stays out — what reaches your screen has to make sense.",
+    "valuesTitle": "Our values",
+    "value1Title": "Accountability",
+    "value1Body": "We make decisions consciously and own the consequences.",
+    "value2Title": "Transparency",
+    "value2Body": "We communicate clearly and honestly. We translate technical jargon into plain language so you always know what we're doing and why.",
     "founder": "Lisandro Andia",
     "founderRole": "Founder & Systems Engineer"
   },

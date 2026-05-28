@@ -39,7 +39,7 @@ export default function Navbar() {
   const navItems = [
     { name: t("projects"), href: "/#projects" },
     { name: t("about"), href: "/about-us" },
-    { name: t("testimonials"), href: "/#testimonios" },
+    // { name: t("testimonials"), href: "/#testimonios" },
     { name: t("faq"), href: "/#faq" },
     { name: t("contact"), href: "/#contacto" },
   ];
