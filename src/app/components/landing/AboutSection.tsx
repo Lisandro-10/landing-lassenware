@@ -16,9 +16,10 @@ export default function AboutSection() {
             <div className="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl overflow-hidden
                             border-4 border-white dark:border-dark shadow-xl flex-shrink-0">
               <Image
-                src="/profile-about.JPEG"
+                src="/profile-about.jpeg"
                 alt="Lisandro Andia — Fundador de Lassenware"
                 fill
+                sizes="(max-width: 640px) 256px, 288px"
                 className="object-cover"
               />
               {/* Ember accent corner */}

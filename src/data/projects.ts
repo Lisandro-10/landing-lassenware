@@ -1,15 +1,4 @@
 export const projects = [
-  // {
-  //   key: "lostilos",
-  //   image: "/projects/lostilos.jpg",
-  //   tags: [
-  //     { label: "Next.js", color: "blue" },
-  //     { label: "Java", color: "orange" },
-  //     { label: "PostgreSQL", color: "blue" },
-  //     { label: "Spring Boot", color: "green" },
-  //   ],
-  //   liveUrl: null,
-  // },
   {
     key: "hexagon",
     image: "/projects/hexagon.png",
@@ -21,7 +10,7 @@ export const projects = [
   },
   {
     key: "nofumomas",
-    image: "/projects/nofumomas.png",
+    image: "/projects/nofumomas.webp",
     tags: [
       { label: "Next.js", color: "blue" },
       { label: "Firebase", color: "orange" },
@@ -47,7 +36,7 @@ export const projects = [
   },
   {
     key: "master-event",
-    image: "/projects/master-event.png",
+    image: "/projects/master-event.webp",
     tags: [
       { label: "Next.js", color: "blue" },
       { label: "AWS S3", color: "green" },

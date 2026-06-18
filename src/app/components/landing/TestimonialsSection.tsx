@@ -1,11 +1,9 @@
 "use client";
 
-import { useTranslations } from "next-intl";
 import { testimonials } from "@/data/testimonials";
 import Image from "next/image";
 
 export default function TestimonialsSection() {
-  const t = useTranslations("Testimonials");
 
   return (
     <section id="testimonios" className="section-container">
@@ -21,13 +19,13 @@ export default function TestimonialsSection() {
                            text-primary/15 dark:text-primary/20 leading-none select-none"
                 aria-hidden
               >
-                "
+                &ldquo;
               </span>
 
               {/* Quote */}
               <p className="text-sm sm:text-base text-text-secondary dark:text-gray-300
                             leading-relaxed relative z-10">
-                "{item.quote}"
+                &ldquo;{item.quote}&rdquo;
               </p>
 
               {/* Author */}
