@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useRef, useState } from "react";
-import { FiExternalLink, FiGithub, FiLock } from "react-icons/fi";
+import { FiExternalLink } from "react-icons/fi";
 import { useTranslations } from "next-intl";
 
 interface ProjectTag {
@@ -83,6 +83,7 @@ export default function ProjectCard({
           src={image}
           alt={title}
           fill
+          sizes="(max-width: 640px) 100vw, 50vw"
           className="object-cover group-hover:scale-105 transition-transform duration-500"
         />
         <div className="absolute top-3 left-3">
